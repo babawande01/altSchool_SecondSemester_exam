@@ -8,7 +8,7 @@ const Counter = ({ increment, decrement, reset, newCount, handleSetValue, settin
             <button onClick={increment} className='btn-dark increment '>Increment</button>
             <button onClick={reset} className='reset'>Reset</button>
             <button onClick={decrement} className='decrement'>Decrement</button>
-            <button onClick={settingClick} className='decrement'>Set A Number</button>
+            <button onClick={settingClick} className='set-number'>Set A Number</button>
         </div>
     )
 }

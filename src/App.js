@@ -14,16 +14,16 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link style={{textDecoration: "none", textDecorationColor: "whitesmoke"}} to="/">Home</Link>
             </li>
             <li>
-              <Link to="/counter">BBWande Counter App</Link>
+              <Link style={{textDecoration: "none"}} to="/counter">BBWande Counter App</Link>
             </li>
             <li>
-              <Link to="/error">Error Boundary</Link>
+              <Link style={{textDecoration: "none"}} to="/error">Error Boundary</Link>
             </li>
             <li>
-              <Link to="*">Page 404</Link>
+              <Link style={{textDecoration: "none", }} to="*">Page 404</Link>
             </li>
           </ul>
         </nav>
