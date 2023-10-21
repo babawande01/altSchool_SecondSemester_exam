@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 36px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/dark_gray.jpg");
+  
+}
+
+ul{
+  color: #fff;
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  margin: 20px;
+  padding: 2rem;
+
+  
+}
+.my-title, .welcome_page, .error_page, .error_message, .title, .error_fallback {
+  color: #c8bfbf;
+}
+
+.card {
+  min-width: 400px; 
+  height: 70vh;
+  padding: 2px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 5px;
+  background-color: #faf6f6;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.buttons {
+  display: flex;
+  height: 10vh;
+  flex-direction: column;
+}
+
+/* .reset {
+  align-self: center;
+} */
+
+/* .decrement {
+  align-self: ;
+}
+.increment {
+  align-self: baseline;
+} */
+
+.display-count {
+  height: 40vh;
+  font-size: 200px;
+}
+
