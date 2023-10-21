@@ -14,7 +14,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/* /index.html 200">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/counter">BBWande Counter App</Link>
@@ -23,12 +23,12 @@ function App() {
               <Link to="/error">Error Boundary</Link>
             </li>
             <li>
-              <Link to="/page404">Page 404</Link>
+              <Link to="*">Page 404</Link>
             </li>
           </ul>
         </nav>
         <Routes>
-          <Route path="/* /index.html 200" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/counter" element={<CounterPage />} />
           <Route
             path="/error"
@@ -48,7 +48,7 @@ function App() {
             }
           /> */}
 
-          <Route path="/page404" element={<PageError />} />
+          <Route path="*" element={<PageError />} />
         </Routes>
       </div>
     </Router>
