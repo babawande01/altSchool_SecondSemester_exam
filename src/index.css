@@ -60,6 +60,14 @@ ul{
   flex-direction: column;
 }
 
+li {
+  text-decoration: none;
+}
+
+li:visited {
+  color: #fff;
+}
+
 /* .reset {
   align-self: center;
 } */
