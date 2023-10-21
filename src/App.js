@@ -14,7 +14,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="*">Home</Link>
+              <Link to="/* /index.html 200">Home</Link>
             </li>
             <li>
               <Link to="/counter">BBWande Counter App</Link>
@@ -28,7 +28,7 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="*" element={<Home />} />
+          <Route path="/* /index.html 200" element={<Home />} />
           <Route path="/counter" element={<CounterPage />} />
           <Route
             path="/error"
