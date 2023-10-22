@@ -40,6 +40,7 @@ ul, .text-center{
 ul {
   /* remove marker */
   list-style: none;
+  color: white;
 }
 .my-title, .welcome_page, .error_page, .error_message, .title, .error_fallback{
   color: #c8bfbf;
