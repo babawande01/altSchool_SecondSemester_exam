@@ -34,8 +34,12 @@ ul, .text-center{
   padding: 0px;
   align-items: center;
   text-align: center;
-
   
+}
+
+ul {
+  /* remove marker */
+  list-style: none;
 }
 .my-title, .welcome_page, .error_page, .error_message, .title, .error_fallback{
   color: #c8bfbf;
@@ -78,9 +82,9 @@ button {
   font-size: 100px;
 }
 
-nav {
+/* nav {
   text-decoration: none;
-}
+} */
 
 
 .reset {
