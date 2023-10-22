@@ -28,7 +28,7 @@ const CounterPage = () => {
  }
   return (
     <div>
-        <h1 className='title'>Counter App</h1>
+        {/* <h1 className='title'>Counter App</h1> */}
       <div className='card'>
         
         <h1 className='display-count'>{count}</h1>

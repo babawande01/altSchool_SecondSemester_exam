@@ -42,6 +42,13 @@ ul {
   list-style: none;
   color: white;
 }
+
+li {
+  padding: 10px;
+}
+ul:hover {
+  color: blue;
+}
 .my-title, .welcome_page, .error_page, .error_message, .title, .error_fallback{
   color: #c8bfbf;
   font-size: 35px;
@@ -60,6 +67,8 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 20px;
+  background-color: rgba(150, 167, 152, 0.274);
 }
 
 
@@ -81,15 +90,21 @@ button {
 .display-count {
   height: 20vh;
   font-size: 100px;
+  color: white;
 }
 
-/* nav {
+nav {
   text-decoration: none;
-} */
+  margin: 20px;
+  background-color: rgba(22, 24, 24, 0.682);
+  padding: 10px;
+  border-radius: 5px;
+  
+}
 
 
 .reset {
-  background-color: #36f4ced4;
+  background-color: rgba(0, 0, 0, 0.447);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -100,7 +115,7 @@ button {
 } 
 
  .decrement {
-  background-color: #f44336af;
+  background-color: rgba(0, 0, 0, 0.447);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -111,7 +126,7 @@ button {
   
 }
 .increment {
-  background-color: #4caf4fa4;
+  background-color: rgba(0, 0, 0, 0.447);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -123,7 +138,7 @@ button {
 } 
 
 .set-number {
-  background-color: #36bef4c6;
+  background-color: rgba(0, 0, 0, 0.447);
   color: #fff;
   border: none;
   border-radius: 5px;

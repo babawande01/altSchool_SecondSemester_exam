@@ -10,23 +10,44 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <h1 className="my-title">BBWande Counter App</h1>
         <nav>
           <ul>
             <li>
-              <Link style={{textDecoration: "none", textDecorationColor: "whitesmoke"}} to="/">Home</Link>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  textDecorationColor: "white",
+                  color: "white",
+                }}
+                to="/"
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link style={{textDecoration: "none"}} to="/counter">BBWande Counter App</Link>
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                to="/counter"
+              >
+                BBWande Counter App
+              </Link>
             </li>
             <li>
-              <Link style={{textDecoration: "none"}} to="/error">Error Boundary</Link>
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                to="/error"
+              >
+                Error Boundary
+              </Link>
             </li>
             <li>
-              <Link style={{textDecoration: "none", }} to="*">Page 404</Link>
+              <Link style={{ textDecoration: "none", color: "white" }} to="*">
+                Page 404
+              </Link>
             </li>
           </ul>
         </nav>
+        <h1 className="my-title">BBWande Counter App</h1>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/counter" element={<CounterPage />} />
@@ -50,8 +71,8 @@ function App() {
 
           <Route path="*" element={<PageError />} />
         </Routes>
-        <footer style={{color: "white"}} className="text-center">
-          <p className="text-white" >BBWande © 2023.</p>
+        <footer style={{ color: "white" }} className="text-center">
+          <p className="text-white">BBWande © 2023.</p>
         </footer>
       </div>
     </Router>
