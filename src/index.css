@@ -25,23 +25,27 @@ body {
   
 }
 
-ul{
-  color: #fff;
+ul, .text-center{
   display: flex;
-  gap: 100px;
-  list-style: none;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 30px;
   margin: 20px;
-  padding: 2rem;
+  padding: 0px;
+  align-items: center;
+  text-align: center;
 
   
 }
-.my-title, .welcome_page, .error_page, .error_message, .title, .error_fallback {
+.my-title, .welcome_page, .error_page, .error_message, .title, .error_fallback{
   color: #c8bfbf;
+  font-size: 35px;
+  text-align: center;
 }
 
 .card {
-  min-width: 400px; 
-  height: 70vh;
+  min-width: 250px;
+  height: 60vh;
   padding: 2px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   border-radius: 5px;
@@ -54,11 +58,24 @@ ul{
 }
 
 
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+ 
+}
+
 .buttons {
   display: flex;
-  height: 10vh;
   flex-direction: column;
-  gap: 5px;;
+  height: 20vh;
+}
+
+.display-count {
+  height: 20vh;
+  font-size: 100px;
 }
 
 nav {
@@ -111,8 +128,179 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-.display-count {
-  height: 40vh;
-  font-size: 200px;
+
+
+/* media queries code */
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1, .error_page, .error_message, .welcome_page {
+    font-size: 40px;
+  }
+
+  ul,.error_message, .welcome_page{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 30px;
+    margin: 20px;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .error_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+  }
+  .card {
+    min-width: 250px;
+    height: 60vh;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+
+  }
+  .display-count {
+    font-size: 50px;
+    height: 15vh;
+  }
+
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+   
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+   
+
+  }
+
+  h1, .error_page, .error_message, .welcome_page {
+    font-size: 20px;
+  }
+
+  ul,.error_message, .welcome_page{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 15px;
+    margin: 20px;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .error_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .card {
+    min-width: 250px;
+    height: 45vh;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+
+  }
+  .display-count {
+    font-size: 50px;
+    height: 10vh;
+  }
+
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+   
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+   
+
+  }
+
+  h1, .error_page, .error_message, .welcome_page {
+    font-size: 25px;
+  }
+
+  ul, .error_page, .error_message, .welcome_page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+    margin: 0px;
+    padding: 20px;
+    align-items: center;
+
+  }
+  .card {
+    min-width: 250px;
+    height: 40vh;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+  .display-count {
+    font-size: 50px;
+    height: 10vh;
+  }
+
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+   
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
 }
 

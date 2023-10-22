@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 class ErrorBoundary extends Component {
 
@@ -26,7 +27,7 @@ class ErrorBoundary extends Component {
     }
   render() {
     if (this.state.hasError) {
-        return <h1 className='error_message'>Something went wrong</h1>
+        return <><h1 className='error_message'>Something went wrong</h1><Link to="/">Home</Link></>
        // return this.props.fallback;
     }
     return this.props.children
